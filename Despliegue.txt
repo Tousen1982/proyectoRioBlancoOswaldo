@@ -1,0 +1,4 @@
+Despliega esta app a Azure App Service (Linux, Node 24 LTS) en el grupo rg-chatbot-foundry, si no exsite en el grupo de recursos crealo
+región westus. El recurso de Foundry se llama miprimeriadeoswaldo-resource y está en el grupo rg-enrique_cucei-ia-4614.
+Usa identidad administrada y el rol Foundry User. Muéstrame cada comando de PowerShell
+antes de ejecutarlo.

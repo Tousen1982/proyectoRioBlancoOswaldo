@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#f5f7fa">
+    <title>Asistente Corporativo Río Claro</title>
+    <link rel="stylesheet" href="/styles.css">
+    <script src="/app.js" defer></script>
+  </head>
+  <body>
+    <div class="app-shell">
+      <header class="site-header">
+        <a class="brand" href="/" aria-label="Distribuidora Río Claro, inicio">
+          <span class="brand-mark" aria-hidden="true">RC</span>
+          <span class="brand-name">Distribuidora <strong>Río Claro</strong></span>
+        </a>
+        <span class="header-label">ASISTENTE CORPORATIVO</span>
+      </header>
+
+      <main class="main-content">
+        <section class="assistant-intro" aria-labelledby="page-title">
+          <div class="assistant-icon" aria-hidden="true">
+            <svg viewBox="0 0 32 32" focusable="false">
+              <path d="M16 3.5 18.8 12l8.7 2.8-8.7 2.8L16 26l-2.8-8.4L4.5 14.8l8.7-2.8L16 3.5Z"/>
+              <path d="m25 21 .9 2.6 2.6.9-2.6.9L25 28l-.9-2.6-2.6-.9 2.6-.9L25 21Z"/>
+            </svg>
+          </div>
+          <p class="eyebrow">Tu espacio de consulta</p>
+          <h1 id="page-title">Asistente Corporativo Río Claro</h1>
+          <p class="intro-copy">
+            Consulta políticas, facturación, productos y procedimientos internos
+            mediante inteligencia artificial.
+          </p>
+        </section>
+
+        <section class="chat-panel" aria-label="Conversación con el asistente">
+          <div id="chat-history" class="chat-history" aria-live="polite" aria-relevant="additions">
+            <article class="message message-assistant">
+              <span class="message-avatar" aria-hidden="true">RC</span>
+              <div class="message-content">
+                <p class="message-label">Asistente Río Claro</p>
+                <p class="message-text">
+                  ¡Hola! Estoy aquí para ayudarte. ¿Qué te gustaría consultar?
+                </p>
+              </div>
+            </article>
+          </div>
+
+          <div class="suggestions">
+            <p class="suggestions-title">Puedes empezar por aquí</p>
+            <div class="suggestion-list">
+              <button class="suggestion-button" type="button">¿Cuál es la política de devoluciones?</button>
+              <button class="suggestion-button" type="button">¿Cómo se validan las facturas?</button>
+              <button class="suggestion-button" type="button">¿Qué hacer ante una factura duplicada?</button>
+              <button class="suggestion-button" type="button">¿Cuál es la política de trabajo remoto?</button>
+              <button class="suggestion-button" type="button">¿Cuántas horas de capacitación son obligatorias?</button>
+              <button class="suggestion-button" type="button">¿Cuánto cuesta el Cloro Industrial 5L?</button>
+            </div>
+          </div>
+
+          <div id="loading-status" class="loading-status" role="status" hidden>
+            <span class="spinner" aria-hidden="true"></span>
+            <span>Consultando documentación corporativa...</span>
+          </div>
+
+          <form id="chat-form" class="chat-form">
+            <label for="message-input">Tu mensaje</label>
+            <div class="input-row">
+              <textarea
+                id="message-input"
+                name="message"
+                rows="2"
+                maxlength="2000"
+                placeholder="Escribe tu consulta..."
+                required
+              ></textarea>
+              <button id="send-button" class="send-button" type="submit">
+                <span>Enviar</span>
+                <svg viewBox="0 0 20 20" aria-hidden="true" focusable="false">
+                  <path d="M3 10h13M10 4l6 6-6 6"/>
+                </svg>
+              </button>
+            </div>
+            <p class="form-hint">La IA puede cometer errores. Verifica la información importante.</p>
+          </form>
+        </section>
+      </main>
+
+      <footer class="site-footer">
+        <span>Distribuidora Río Claro</span>
+        <span>Asistente con inteligencia artificial</span>
+      </footer>
+    </div>
+  </body>
+</html>
